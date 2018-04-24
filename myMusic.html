@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Music</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- flipster -->
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<link rel="stylesheet" href="css/flipster/demo.css">
+			<link rel="stylesheet" href="css/flipster/jquery.flipster.min.css">
+		<!-- boot for nav & tooltip & table-->
+			<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- local -->
+			<link rel="stylesheet" type="text/css" href="css/styleMyFiles.css">
+		<!-- flipster js-->
+			<script src="javascript/flipster/jquery.min.js"></script>
+			<script src="javascript/flipster/jquery.flipster.min.js"></script>
+
+	</head>
+	<body>
+		<!-- Main container -->
+		<div class="container">
+			<!-- Inner main container -->
+			<div class="second">
+				<!-- 1st row -->
+				<div class="row" id="row1">
+			  		<div class="column side">
+			    		<div class="mike">
+						</div>
+			  		</div>
+			  		<div class="column mid">
+			    		<div class="musicLogo">
+						</div>
+			  		</div>
+			  		<div class="column side">
+			    		<div class="search">
+								<input type="text">
+			  			</div>
+					</div>
+				</div>
+				<!-- 1st row end -->
+				<br>
+
+				<!-- nav bar -->
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+				    <ul class="nav navbar-nav">
+				      <li><a href="indexMusic.html">About Me</a></li>
+				      <li><a href="myPictures.html">My Pictures</a></li>
+				      <li><a href="#" class="active">My Music</a></li>
+				      <li><a href="myFiles.html">My Files</a></li>
+				      <li><a href="myVideos.html">My Videos</a></li>
+				    </ul>
+				  </div>
+				</nav>
+			  	<!-- nav bar end ******************************************************************-->	
+			  <div class=mainViewMusic>	
+			  	<div class="btn-group gridGal">
+			  		<button type="button" class="btn btn-primary gridBtn active">Grid</button>
+			  		<button type="button" class="btn btn-primary listBtn">List</button>
+			  		<button type="button"class="btn btn-primary galleryBtn">Gallery</button>
+				  </div>
+
+				  <br>
+				  <br>
+					<!-- musicGrid -->
+					<div class="musicGrid">
+<<<<<<< HEAD
+						<div class="gridMusicPlayer_Info">
+              <div class="gridMusicPlayer"><audio controls id="resource_audio"></audio></div>
+              <!-- to display info -->
+              <div class="muscicGridInfo disp"><p class="gridMusInfo" id="infov2"></p></div>
+            </div>
+            <br>
+            <div class="musicImageGrid">
+						<img src="images/videoThumbs/lean.gif" class="imgDetail gridImg" id="audio/LeanOn.mp3" data-title='Title: Lean on' data-artist="Artist: MO" data-genre="Genre: Pop" data-length="Length: 4.11" data-rating="3" data-toggle="tooltip" data-placement="top" title="MO-Lean on">
+	          <img src="images/videoThumbs/brunomarsuptownfunk.gif" class="imgDetail gridImg" id="audio/UptownFunk.mp3" data-title='Title: Uptown Funk' data-artist="Artist: Bruno Mars" data-genre="Genre: Pop" data-length="Length: 4.30" data-rating="4" data-toggle="tooltip" data-placement="top" title="Bruno Mars-Uptown Funk">
+	          <img src="images/videoThumbs/david_guetta.gif" class="imgDetail gridImg" id="audio/ClubCantHandleMe.mp3" data-title='Title: Dangerous' data-artist="Artist: David Guetta" data-genre="Genre: Dance/Electronic" data-length="Length: 7.08" data-rating="2" data-toggle="tooltip" data-placement="top" title="David Guetta-Dangerous">
+	          <img src="images/videoThumbs/boys.gif" class="imgDetail gridImg"
+	          id="audio/Iwantitthatway.mp3" data-title='Title: I Want It That Way' data-artist="Artist: VBackstreet Boys" data-genre="Genre: Pop" data-length="Length: 3.39" data-rating="3" data-toggle="tooltip" data-placement="top" title="Backstreet Boys-I Want It That Way">
+	          <img src="images/videoThumbs/dmitri.gif" class="imgDetail gridImg" id="audio/HeyBaby.mp3" data-title='Title: Hey Baby' data-artist="Artist: Dmitri Vegas & Like Mike" data-genre="Genre: Pop" data-length="Length: 3.16" data-rating="3" data-toggle="tooltip" data-placement="top" title="Dimitri Vegas-Hey Baby">
+					
+						<br>
+	          <br>
+	          <img src="images/videoThumbs/cali.gif" class="imgDetail gridImg"
+	          id="audio/HotelCalifornia.mp3" data-title='Title: Hotel California' data-artist="Artist: Eagles" data-genre="Genre: Rock" data-length="Length: 6.40" data-rating="5" data-toggle="tooltip" data-placement="bottom" title="Eagles-Hotel California">
+			      <img src="images/videoThumbs/ed.gif" class="imgDetail gridImg"
+			      id="audio/ShapeOfYou.mp3" style="" data-title='Title: Shape Of You' data-artist="Artist: Ed Sheeran" data-genre="Genre: Pop" data-length="Length: 4.23" data-rating="4" data-toggle="tooltip" data-placement="bottom" title="Ed Sheeran-Shape Of You">
+			      <img src="images/videoThumbs/en.gif" class="imgDetail gridImg"
+			      id="audio/Bailando.mp3" style="" data-title='Title: Bailando' data-artist="Artist: Enrique Iglesias" data-genre="Genre: Jazz" data-length="Length: 4.31" data-rating="5" data-toggle="tooltip" data-placement="bottom" title="Enrique Iglesias-Bailando">
+			      <img src="images/videoThumbs/krew.gif" class="imgDetail gridImg"
+			      id="audio/Alive.mp3" style="" data-title='Title: Alive' data-artist="Artist: Krewella" data-genre="Genre: Dance/Electronic" data-length="Length: 3.26" data-rating="5" data-toggle="tooltip" data-placement="bottom" title="Krewella-Alive">
+			      <img src="images/videoThumbs/despa.gif" class="imgDetail gridImg" id="audio/Despacito.mp3" data-title='Title: Despacito' data-artist="Artist: Luis Fonsi" data-genre="Genre: Pop" data-length="Length: 4.41" data-rating="4" data-toggle="tooltip" data-placement="bottom" title="Luis Fonsi-Despacito">
+			      </div>
+					</div>	
+		  	</div> <!-- musicGrid end -->
+				<!-- musicList -->
+				<div class="musicList disp">	
+					<div class="listMusicPlayer">
+						<audio controls id="resource_audioList" class="audioList"> </audio>
+=======
+					</div><!-- musicGrid end -->
+					<!-- musicList -->
+					<div class="musicList disp">	
+						<table class="table">
+					    <thead>
+					      <tr>
+					        <th>Sr no</th>
+					        <th>Status</th>
+					        <th>Name</th>
+					        <th>Artist</th>
+					        <th>Genre</th>
+					        <th>Length</th>
+					        <th>Size</th>
+					        <th>Rating</th>
+					      </tr>
+					    </thead>
+					    <tbody>
+					      <tr>
+					        <td>1</td>
+					        <td>Status</td>
+					        <td>Song 1</td>
+					        <td>Artist 1</td>
+					        <td>Rock</td>
+					        <td>3:30</td>
+					        <td>5MB</td>
+					        <td>*****</td>
+					      </tr>
+					      <tr>
+					        <td>1</td>
+					        <td>Status</td>
+					        <td>Song 2</td>
+					        <td>Artist 2</td>
+					        <td>Genre</td>
+					        <td>Length</td>
+					        <td>Size</td>
+					        <td>Rating</td>
+					      </tr>
+					      <tr>
+					        <td>1</td>
+					        <td>Status</td>
+					        <td>Song 1</td>
+					        <td>Artist 1</td>
+					        <td>Genre</td>
+					        <td>Length</td>
+					        <td>Size</td>
+					        <td>Rating</td>
+					      </tr>
+					    </tbody>
+					  </table>
+>>>>>>> 6360ae524bcce5727286fd9ff01be9145d32a78a
+					</div>
+					<table class="table" id="data">
+				    <thead>
+				      <tr>
+				        <th>Sr no</th>
+				        <th>Status</th>
+				        <th>Name</th>
+				        <th>Artist</th>
+				        <th>Genre</th>
+				        <th>Length</th>
+				        <th>Size</th>
+				        <th>Rating</th>
+				      </tr>
+				    </thead>
+				    <tbody>
+				      <tr class="trAudio" id="audio/LeanOn.mp3">
+				        <td>1</td>
+				        <td class="status">Play</td>
+				        <td>Lean On</td>
+				        <td>MO</td>
+				        <td>Pop</td>
+				        <td>3:30</td>
+				        <td>5MB</td>
+				        <td><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"></td>
+				      </tr>
+				      <tr class="trAudio" id="audio/UptownFunk.mp3">
+				        <td>2</td>
+				        <td class="status">Play</td>
+				        <td>Uptown Funk</td>
+				        <td>Bruno Mars</td>
+				        <td>Pop</td>
+				        <td>4.30</td>
+				        <td>4.4MB</td>
+				        <td><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"></td>
+				      </tr>
+				      <tr class="trAudio" id="audio/ClubCantHandleMe.mp3">
+				        <td>3</td>
+				        <td class="status">Play</td>
+				        <td>Dangerous</td>
+				        <td>David Guetta</td>
+				        <td>Dance/Electronic</td>
+				        <td>7.08</td>
+				        <td>5.7MB</td>
+				        <td><img src="images/star.png"><img src="images/star.png"></td>
+				      </tr>
+				      <tr class="trAudio" id="audio/Iwantitthatway.mp3">
+				        <td>4</td>
+				        <td class="status">Play</td>
+				        <td>I Want It That Way</td>
+				        <td>Backstreet Boys</td>
+				        <td>Pop</td>
+				        <td>3.39</td>
+				        <td>5.7MB</td>
+				        <td><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"></td>
+				      </tr>
+				      <tr class="trAudio" id="audio/HeyBaby.mp3">
+				        <td>5</td>
+				        <td class="status">Play</td>
+				        <td>Hey Baby</td>
+				        <td>Dmitri Vegas & Like Mike</td>
+				        <td>Pop</td>
+				        <td>3.16</td>
+				        <td>7.8MB</td>
+				        <td><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"></td>
+				      </tr>
+				      <tr class="trAudio" id="audio/HotelCalifornia.mp3">
+				        <td>6</td>
+				        <td class="status">Play</td>
+				        <td>Hotel California</td>
+				        <td>Eagles</td>
+				        <td>Rock</td>
+				        <td>6.40</td>
+				        <td>16.3MB</td>
+				        <td><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"></td>
+				      </tr>
+				      <tr class="trAudio" id="audio/ShapeOfYou.mp3">
+				        <td>7</td>
+				        <td class="status">Play</td>
+				        <td>Shape Of You</td>
+				        <td>Ed Sheeran</td>
+				        <td>Pop</td>
+				        <td>4.23</td>
+				        <td>9.5MB</td>
+				        <td><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"></td>
+				      </tr>
+				      <tr class="trAudio" id="audio/Bailando.mp3">
+				        <td>8</td>
+				        <td class="status">Play</td>
+				        <td>Bailando</td>
+				        <td>Enrique Iglesias</td>
+				        <td>Jazz</td>
+				        <td>4.31</td>
+				        <td>9.7MB</td>
+				        <td><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"></td>
+				      </tr>
+				      <tr class="trAudio" id="audio/Alive.mp3">
+				        <td>9</td>
+				        <td class="status">Play</td>
+				        <td>Alive</td>
+				        <td>Krewella</td>
+				        <td>Dance/Electronic</td>
+				        <td>3.26</td>
+				        <td>14.2MB</td>
+				        <td><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"></td>
+				      </tr>
+				      <tr class="trAudio" id="audio/Despacito.mp3">
+				        <td>10</td>
+				        <td class="status">Play</td>
+				        <td>Despacito</td>
+				        <td>Luis Fonsi</td>
+				        <td>Pop</td>
+				        <td>4.41</td>
+				        <td>5.7MB</td>
+				        <td><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"><img src="images/star.png"></td>
+				      </tr>
+				    </tbody>
+				  </table>
+				</div>
+					<!-- music gallery -->
+<<<<<<< HEAD
+					<div class="musicGallery disp">
+						<div class="gridMusicDiv">
+							<audio controls id="resource_audio1" class="audio1 disp"> </audio>
+						</div>
+						<br>
+						<article id="demo-carousel" class="demo musicGal">
+					    <div id="carousel">
+					      <ul class="flip-items musGal">
+			            <li class="musicInfoGal" data-title='Title: Lean on' data-artist="Artist: MO" 		    data-genre="Genre: Pop" data-length="Length: 4.11" data-rating="3" data-toggle="tooltip" data-placement="right" title="MO-Lean on">
+		                <img src="images/videoThumbs/lean.gif" class="w3-hover-opacity imgDetail play_aud"
+							   				 id="audio/LeanOn.mp3" >
+			            </li>
+			            <li class="musicInfoGal" data-title='Title: Uptown Funk' data-artist="Artist: Bruno Mars" data-genre="Genre: Pop" data-length="Length: 4.30" data-rating="4" data-toggle="tooltip" data-placement="right" title="Bruno Mars-Uptown Funk">
+			            	<img src="images/videoThumbs/brunomarsuptownfunk.gif" class="w3-hover-opacity imgDetail play_aud" id="audio/UptownFunk.mp3">
+			            </li>
+			            <li class="musicInfoGal" data-title='Title: Dangerous' data-artist="Artist: David Guetta" data-genre="Genre: Dance/Electronic" data-length="Length: 7.08" data-rating="2" data-toggle="tooltip" data-placement="right" title="David Guetta-Dangerous">
+			            	<img src="images/videoThumbs/david_guetta.gif" class="w3-hover-opacity imgDetail play_aud" id="audio/ClubCantHandleMe.mp3">
+			            </li>
+			            <li class="musicInfoGal" data-title='Title: I Want It That Way' data-artist="Artist: Backstreet Boys" data-genre="Genre: Pop" data-length="Length: 3.39" data-rating="3" data-toggle="tooltip" data-placement="right" title="Backstreet Boys-I Want It That Way">
+		                <img src="images/videoThumbs/boys.gif" class="w3-hover-opacity imgDetail play_aud"
+							   		id="audio/Iwantitthatway.mp3">
+			            </li>
+			            <li class="musicInfoGal" data-title='Title: Hey Baby' data-artist="Artist: Dmitri Vegas & Like Mike" data-genre="Genre: Pop" data-length="Length: 3.16" data-rating="3" data-toggle="tooltip" data-placement="right" title="Dimitri Vegas-Hey Baby">
+			            	<img src="images/videoThumbs/dmitri.gif" class="w3-hover-opacity imgDetail play_aud" id="audio/HeyBaby.mp3">
+			            </li>
+			            <li class="musicInfoGal" data-title='Title: Hotel California' data-artist="Artist: Eagles" data-genre="Genre: Rock" data-length="Length: 6.40" data-rating="5" data-toggle="tooltip" data-placement="right" title="Eagles-Hotel California">
+			            	<img src="images/videoThumbs/california.gif" class="w3-hover-opacity imgDetail play_aud" id="audio/HotelCalifornia.mp3">
+			            </li>
+			            <li class="musicInfoGal" data-title='Title: Shape Of You' data-artist="Artist: Ed Sheeran" data-genre="Genre: Pop" data-length="Length: 4.23" data-rating="4" data-toggle="tooltip" data-placement="right" title="Ed Sheeran-Shape Of You">
+			                <img src="images/videoThumbs/ed.gif" class="w3-hover-opacity imgDetail play_aud"
+								   		id="audio/ShapeOfYou.mp3">
+			            </li>
+			            <li class="musicInfoGal" data-title='Title: Bailando' data-artist="Artist: Enrique Iglesias" data-genre="Genre: Jazz" data-length="Length: 4.31" data-rating="5" data-toggle="tooltip" data-placement="right" title="Enrique Iglesias-Bailando">
+			            	<img src="images/videoThumbs/en.gif" class="w3-hover-opacity imgDetail play_aud"
+								   	id="audio/Bailando.mp3">
+			            </li>
+			            <li class="musicInfoGal" data-title='Title: Alive' data-artist="Artist: Krewella" data-genre="Genre: Dance/Electronic" data-length="Length: 3.26" data-rating="5" data-toggle="tooltip" data-placement="right" title="Krewella-Alive">
+			            	<img src="images/videoThumbs/krew.gif" class="w3-hover-opacity imgDetail play_aud" id="audio/Alive.mp3">
+			            </li>
+			            <li class="musicInfoGal" data-title='Title: Despacito' data-artist="Artist: Luis Fonsi" data-genre="Genre: Pop" data-length="Length: 4.41" data-rating="4" data-toggle="tooltip" data-placement="right" title="Luis Fonsi-Despacito">
+			            	<img src="images/videoThumbs/despa.gif" class="w3-hover-opacity imgDetail play_aud" id="audio/Despacito.mp3">
+			            </li>
+					      </ul>
+=======
+					<div class="musicGallery disp demo123">
+						<article id="demo-carousel" class="demo">
+
+					    <div id="carousel" class="">
+					        <ul class="flip-items">
+					            <li class="music" id="0"><!-- data-flip-title="Red" -->
+					                <!--<img src="images/gallery/5.jpg" data-toggle="tooltip" title="Song 1"> o-->
+									<video width="320" height="240" controls class="vid" data-toggle="tooltip" data-placement="left" title="Titanic Theme">
+										<source src="D:\media\Video\New folder\(Titanic Theme)  Sungha Jung.mp4" type="video/mp4">
+									</video>
+					            </li>
+					            <li class="music" id="1"><!-- data-flip-title="Razzmatazz" data-flip-category="Purples" -->
+					                <!--<img src="images/gallery/1.jpeg">-->
+									<video width="320" height="240" controls class="vid" data-toggle="tooltip" data-placement="left" title="Cupcake">
+										<source src="D:\media\Video\New folder\Cuppycake Video.mp4" type="video/mp4">
+									</video>
+					             </li>
+					            <li class="music" id="2"><!-- data-flip-title="Deep Lilac" data-flip-category="Purples" -->
+	                <video width="320" height="240" controls class="vid" data-toggle="tooltip" data-placement="left" title="Titanic">
+										<source src="D:\media\Video\New folder\(Titanic Theme)  Sungha Jung.mp4" type="video/mp4">
+									</video>
+					            </li>
+					            <li class="music" id="3"><!-- data-flip-title="Daisy Bush" data-flip-category="Purples" -->
+					                <img src="images/gallery/3.jpg">
+					            </li>
+					            <li class="music" id="4"><!-- data-flip-title="Cerulean Blue" data-flip-category="Blues" -->
+					                <img src="images/gallery/4.jpg">
+					            </li>
+					        </ul>
+>>>>>>> 6360ae524bcce5727286fd9ff01be9145d32a78a
+					    </div>
+						</article>
+<<<<<<< HEAD
+						<p class="galleryMusInfo disp"></p>
+=======
+						
+						<p id="p" class="info"></p>
+>>>>>>> 6360ae524bcce5727286fd9ff01be9145d32a78a
+					</div><!-- musicGallery end -->	
+				</div><!-- mainViewMusic end -->
+				<!-- footer row -->
+				<footer>
+					<!-- line -->
+					<div class="line"></div>
+					<!-- row 1 containing buttons -->
+					<div class="footerRow1">
+						<a href="#" class="footerBtn pipe">EULA</a>
+						<a href="#" class="footerBtn pipe">Terms of services</a>
+						<a href="#" class="footerBtn">Privacy policy</a>
+					</div>
+					<!-- row 2 of footer -->
+					<div class="footerRow2">
+						<img src="images/mike.jpg" id="footerImg">
+						<small class="footerText">Copyright © 2018 My website. All rights reserved &reg</small>
+					</div>
+					<!-- row 3 of footer -->
+					<div id="mySidenav" class="sidenav">
+  						<a href="https://www.blogger.com/" target="blank" class="aNav">
+  							<img src="images/blogger.png" id="blogger">
+  						</a>
+  						<a href="https://www.facebook.com/" class="aNav">
+  							<img src="images/facebook.png" id="fb">
+  						</a>
+  						<a href="http://digg.com/" class="aNav">
+  							<img src="images/digg.png" id="digg">
+  						</a>
+  						<a href="https://www.linkedin.com/start/join?_l=en" class="aNav">
+  							<img src="images/linkedin.png" id="linkedin">
+  						</a>
+  						<a href="https://www.stumbleupon.com/" class="aNav">
+  							<img src="images/stumbleupon.png" id="stumble">
+  						</a>
+  						<a href="https://twitter.com/login?lang=en" class="aNav">
+  							<img src="images/twitter.png" id="twit">
+  						</a>
+					</div>
+				</footer>
+			</div><!-- second -->
+		</div><!-- main -->	
+<<<<<<< HEAD
+		<!-- custom js -->
+		<script src="javascript/script.js"></script>
+		<!-- js for tooltip & table 3.3.1 -->
+		<script src="javascript/flipster/jquery.min.js"></script>
+  	<script src="javascript/bootstrap.min.js"></script>
+=======
+
+		<script>
+			/*jquery for switching div*/
+				/*view list*/
+				$('.listBtn').click(function()
+				{
+					$('.musicList').removeClass('disp');
+					$('.musicGrid').addClass('disp');
+					$('.musicGallery').addClass('disp');
+				})	
+				/*view gallery*/
+				$('.galleryBtn').click(function()
+				{
+					$('.musicList').addClass('disp');
+					$('.musicGrid').addClass('disp');
+					$('.musicGallery').removeClass('disp');
+				})
+				/*view grid*/
+				$('.gridBtn').on('click',function()
+				{
+					$('.musicGrid').removeClass('disp');
+					$('.musicList').addClass('disp');
+					$('.musicGallery').addClass('disp');
+				})
+		</script>	
+		<!-- tooltip -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script>
+			//tooltip
+			$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip();   
+			});
+		</script>
+
+		<script>//for play/pause
+		$(document).ready(function(){
+		    $(".vid").click(function(){
+				 $('video').each(function() {
+		         this.pause();
+		    });
+				 $(this).get(0).play();
+			});
+		});
+		</script>
+		
+		<script>//array for displaying details to <p>
+		$(document).ready(function(){
+		    $(".music").click(function(){
+				var s = $(this).attr('id');
+				document.getElementById('p').innerHTML = arr[s];
+				<!-- $('.info').text(arr[s]); -->
+			});
+	
+			var arr = ['title song1<br/> album a1 <img src="images/blogger.png">',
+					   'title song2<br/> album a2',
+					   'title song3<br/> album a3',
+					   'title song4<br/> album a4',
+					   'title song5<br/> album a5',
+					   ];	
+		});
+		</script>
+>>>>>>> 6360ae524bcce5727286fd9ff01be9145d32a78a
+	</body>
+</html>

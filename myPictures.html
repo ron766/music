@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Pictures</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- image gallery -->
+			<meta name="description" content="Responsive Image Gallery with jQuery" />
+	    <meta name="keywords" content="jquery, carousel, image gallery, slider, responsive, flexible, fluid, resize, css3" />
+			<meta name="author" content="Codrops" />
+		<!-- modal image gallery css -->
+			<link rel="stylesheet" href="css/w3ModalGal.css">
+		<!-- image gallery -->
+			<!-- <link rel="shortcut icon" href="../favicon.ico">  -->
+			<link rel="stylesheet" href="css/imageGallery/reset.css" />
+		  <link rel="stylesheet" href="css/imageGallery/demo.css" />
+			<link rel="stylesheet" href="css/imageGallery/style.css" />
+			<link rel="stylesheet" href="css/imageGallery/elastislide.css" />
+		<!-- boot -->
+			<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- local css -->
+			<link rel="stylesheet" type="text/css" href="css/styleMyFiles.css">
+		<!-- js for div replace & image gallery2.1.1-->
+		<script src="javascript/flipster/jquery.min.js"></script>
+		<!-- script for image gallery-->
+		<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
+			<div class="rg-image-wrapper">
+				{{if itemsCount > 1}}
+					<div class="rg-image-nav">
+					</div>
+				{{/if}}
+				<div class="rg-image"></div>
+				<div class="rg-loading"></div>
+				<div class="rg-caption-wrapper">
+					<div class="rg-caption" style="display:none;">
+						<p></p>
+					</div>
+				</div>
+			</div>
+		</script>
+	</head>
+	<body>
+		<div class="container">     <!-- Main container-->
+			<div class="second">			<!-- Inner main container -->
+				<!-- 1st row -->
+				<div class="row" id="row1">
+		  		<div class="column side"> <div class="mike"> </div> </div> 
+		  		<div class="column mid"> 
+		  			<div class="musicLogo"> </div> 
+		  		</div>
+		  		<div class="column side"> 
+		  			<div class="search pic">
+						<input type="text searchBox" ><!-- style="width: 99%; padding: 0px;" -->
+		  			</div>
+					</div>
+				</div>
+				<!-- 1st row end -->
+				<br>
+				<!-- nav bar -->
+				<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+				    <ul class="nav navbar-nav">
+				      <li><a href="indexMusic.html">About Me</a></li>
+				      <li><a href="#" class="active">My Pictures</a></li>
+				      <li><a href="myMusic.html">My Music</a></li>
+				      <li><a href="myFiles.html">My Files</a></li>
+				      <li><a href="myVideos.html">My Videos</a></li>
+				    </ul>
+				  </div>
+				</nav>
+			  <!-- nav bar end ******************************************************************-->
+			  	<!-- GRID and GALLERY button group -->
+		  	<div class=mainView>
+			  	<div class="btn-group gridGal">
+			  		<button type="button" class="btn btn-primary gridBtn active">Grid</button>
+			  		<button type="button" class="btn btn-primary galleryBtn">Gallery</button>
+			  	</div>
+			  	<br>
+					<br>
+					<!-- image grid -->
+					<div class="grid">
+						<div><!-- image row 1 -->
+							<img src="images/gallery/1.jpeg" onclick="onClick(this)" class="w3-hover-opacity imgDetail">
+					    <img src="images/gallery/2.jpg" onclick="onClick(this)" class="w3-hover-opacity imgDetail">
+							<img src="images/gallery/3.jpg" onclick="onClick(this)" class="w3-hover-opacity imgDetail">
+							<img src="images/gallery/4.jpg" onclick="onClick(this)" class="w3-hover-opacity imgDetail">
+							<img src="images/gallery/5.jpg" onclick="onClick(this)" class="w3-hover-opacity imgDetail">
+						</div>
+						<br>
+						<div><!-- image row 2 -->
+							<img src="images/gallery/6.jpg" onclick="onClick(this)" class="w3-hover-opacity imgDetail">
+					    <img src="images/gallery/7.jpg" onclick="onClick(this)" class="w3-hover-opacity imgDetail">
+							<img src="images/gallery/8.jpg" onclick="onClick(this)" class="w3-hover-opacity imgDetail">
+							<img src="images/gallery/9.jpg" onclick="onClick(this)" class="w3-hover-opacity imgDetail">
+							<img src="images/gallery/10.jpg" onclick="onClick(this)" class="w3-hover-opacity imgDetail">
+						</div>
+						<br>
+						<div><!-- image row 3 -->
+							<img src="images/gallery/11.jpg" onclick="onClick(this)" class="w3-hover-opacity imgDetail">
+					    <img src="images/gallery/12.jpg" onclick="onClick(this)" class="w3-hover-opacity imgDetail">
+							<img src="images/gallery/13.jpg" onclick="onClick(this)" class="w3-hover-opacity imgDetail">
+							<img src="images/gallery/14.JPG" onclick="onClick(this)" class="w3-hover-opacity imgDetail">
+							<img src="images/gallery/15.jpg" onclick="onClick(this)" class="w3-hover-opacity imgDetail">
+						</div>
+						<!-- popup image view -->
+						<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+							<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+						 	<div class="w3-modal-content w3-animate-zoom">
+					    	<div class="imgView">
+					    		<img id="img01" style="width:100%">
+					    		<p>Music is an art form and cultural activity whose medium is sound organized in time. The common elements of music are pitch, rhythm, dynamics, and the sonic qualities of timbre 	 and texture. 
+					    		</p>
+					    	</div>
+						  </div>
+						</div>
+					</div><!-- grid div end -->	
+
+					<!-- image gallery view -->
+					<div class="gallery disp">
+						<div class="content">
+							<div id="rg-gallery" class="rg-gallery">
+								<div class="rg-thumbs">
+									<!-- Elastislide Carousel Thumbnail Viewer -->
+									<div class="es-carousel-wrapper">
+										<div class="es-nav">
+											<span class="es-nav-prev">Previous</span>
+											<span class="es-nav-next">Next</span>
+										</div>
+										<div class="es-carousel">
+											<ul>
+												<li>
+													<a href="#">
+														<img src="images/gallery/1.jpeg" data-large="images/gallery/1.jpeg" alt="image01" data-description="Earphones" />
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/gallery/2.jpg" data-large="images/gallery/2.jpg" alt="image01" data-description="Classic Guitar" />
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/gallery/3.jpg" data-large="images/gallery/3.jpg" alt="image01" data-description="Headphones" />
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/gallery/4.jpg" data-large="images/gallery/4.jpg" alt="image01" data-description="Some music instrument" />
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/gallery/5.jpg" data-large="images/gallery/5.jpg" alt="image01" data-description="Colour headphones" />
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/gallery/6.jpg" data-large="images/gallery/6.jpg" alt="image01" data-description="Music mike" />
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/gallery/7.jpg" data-large="images/gallery/7.jpg" alt="image01" data-description="Some music instrument" />
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/gallery/8.jpg" data-large="images/gallery/8.jpg" alt="image01" data-description="Trumpet" />
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/gallery/9.jpg" data-large="images/gallery/9.jpg" alt="image01" data-description="Some music instrument" />
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/gallery/10.jpg" data-large="images/gallery/10.jpg" alt="image01" data-description="Record player" />
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/gallery/11.jpg" data-large="images/gallery/11.jpg" alt="image01" data-description="Classic trumpet" />
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/gallery/12.jpg" data-large="images/gallery/12.jpg" alt="image01" data-description="Pipe" />
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/gallery/13.jpg" data-large="images/gallery/13.jpg" alt="image01" data-description="Tabla" />
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/gallery/14.JPG" data-large="images/gallery/14.JPG" alt="image01" data-description="Sitar & Tabla" />
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<img src="images/gallery/15.jpg" data-large="images/gallery/15.jpg" alt="image01" data-description="Piano" />
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- End Elastislide Carousel Thumbnail Viewer -->
+								</div><!-- rg-thumbs -->
+							</div><!-- rg-gallery -->
+						</div><!-- content -->
+				</div><!-- main view -->
+				<!-- footer row -->
+				<footer>
+					<!-- line -->
+					<div class="line"></div>
+					<!-- row 1 containing buttons -->
+					<div class="footerRow1">
+						<a href="#" class="footerBtn pipe">EULA</a>
+						<a href="#" class="footerBtn pipe">Terms of services</a>
+						<a href="#" class="footerBtn">Privacy policy</a>
+					</div>
+					<!-- row 2 of footer -->
+					<div class="footerRow2">
+						<img src="images/mike.jpg" id="footerImg">
+						<small class="footerText">Copyright © 2018 My website. All rights reserved &reg</small>
+					</div>
+					<!-- row 3 of footer -->
+					<div id="mySidenav" class="sidenav">
+						<a href="https://www.blogger.com/" target="blank" class="aNav">
+							<img src="images/blogger.png" id="blogger">
+						</a>
+						<a href="https://www.facebook.com/" target="blank" class="aNav">
+							<img src="images/facebook.png" id="fb">
+						</a>
+						<a href="http://digg.com/" target="blank" class="aNav">
+							<img src="images/digg.png" id="digg">
+						</a>
+						<a href="https://www.linkedin.com/start/join?_l=en" target="blank" class="aNav">
+							<img src="images/linkedin.png" id="linkedin">
+						</a>
+						<a href="https://www.stumbleupon.com/" target="blank" class="aNav">
+							<img src="images/stumbleupon.png" id="stumble">
+						</a>
+						<a href="https://twitter.com/login?lang=en" target="blank" class="aNav">
+							<img src="images/twitter.png" id="twit">
+						</a>
+					</div>
+				</footer>
+			</div><!-- second -->
+		</div><!-- main -->		
+		<!-- custom js -->
+		
+		<!-- image gallery -->
+		<script type="text/javascript" src="javascript/imageGallery/jquery.tmpl.min.js"></script>
+		<script type="text/javascript" src="javascript/imageGallery/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="javascript/imageGallery/jquery.elastislide.js"></script>
+		<script type="text/javascript" src="javascript/imageGallery/gallery.js"></script> 
+		<script src="javascript/script.js"></script>
+	</body>
+</html>

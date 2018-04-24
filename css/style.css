@@ -1,0 +1,328 @@
+@font-face
+{
+   font-family: MaiandraGD;
+   src: url('/project/MusicApp/css/fonts/Maiandra/Maiandra GD Regular.ttf');
+}
+
+/* main container */ 
+  .container
+  {
+      position: relative;
+      background: url(/project/MusicApp/images/bg1.jpg) no-repeat;
+      background-size: 100% 100%;
+      width: 100%;
+      /* opacity: 0.97; */
+      min-height: 1100px; 
+  }
+
+/* second - inner container */
+  .second
+  {
+      background: url(/project/MusicApp/images/Layer4.png);
+      margin-left: auto;
+      margin-right: auto;
+      width: 60%;
+      padding-top: 10px;
+      min-height: 1120px;
+      /* border: 1px solid white; */
+  }
+
+/* 1st row */
+
+   .row
+   {
+      margin-right: 0px;
+      margin-left: 0px;
+      width: 100%;
+      /* border: 1px solid red; */
+   }
+
+  /* mike details */
+  .mike
+  {
+      background-image: url(/project/MusicApp/images/mike.jpg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      padding-bottom: 112px;
+      width: 70%;
+      margin-top: 3px;
+      opacity: .9;
+  }
+
+  .musicLogo
+  {
+      margin-top: 12px;
+      background-image: url(/project/MusicApp/images/Music-logo.png);
+      background-repeat: no-repeat;
+      padding-bottom: 29.3%;
+  }
+
+  .search /* div */
+  {
+      position: relative;
+      float: right;
+      width: 73%;
+      margin-top: 3px;
+      background-color: rgb(216, 218, 221);
+      background-image: url(/project/MusicApp/images/search_icon.png);
+      background-repeat: no-repeat;
+      background-position-x: 3px;
+      background-position-y: 7px;
+      padding-left: 20px;
+      /* border: 1px solid red; */
+  }
+
+  /* #s
+  {
+      margin-top: 1px;
+      margin-left: 24px;
+      padding-left:10px;
+      height:25px;
+      width: 100px;
+      opacity: .5;
+  }
+   */
+  .column 
+  {
+      float: left;
+      width: 33.33%;
+      margin-left: 0px;
+      padding-bottom: 5px; 
+      /* border: 1px solid white; */   
+  }
+  .side
+  {
+      width: 30%;
+  }
+  .mid
+  {
+      width: 40%;
+  }
+  /* Clear floats after the columns */
+  #row1:after 
+  {
+      content: "";
+      display: table;
+      clear: both;
+  }
+/* 1st row end*/  
+
+   /* nav detailing */
+   .navbar.navbar-default
+   {
+      border: 1px solid white;
+      box-shadow: 1px 2px 23px 3px rgb(137,136,186);
+      background: linear-gradient(0deg, #69a643 0%, #99c03b 100%);
+   }
+
+   .container-fluid
+   {
+      padding: 0px;
+   }
+
+   ul
+   {
+      text-align: center;
+      width: 100%;
+   }
+
+   li
+   {
+      border: 1px solid white;
+      width: 20%;
+      font-size: 20px;
+   }
+   
+   .navbar-default .navbar-nav>li>a
+   {
+      color: white;
+   }
+   
+  }
+
+  a:hover
+  {
+      background: linear-gradient(0deg, #0c4c5a 0%, #47bbec 100%);
+      font-weight: bold;
+  }
+
+  .active 
+  {
+      background-color:#286090;
+  } 
+
+/* 1st row ends------------------------------------------------------- */
+
+
+/* 2nd row contents */
+
+  /* Text area datailing */
+
+  .txt
+  {
+    padding-left: 0px;
+  }
+
+   h2
+   {
+      margin-top: 0px;
+   }
+  h2 span
+  {
+      margin-top: 5px;
+      display: block;
+      line-height: 0;
+  }
+  h1 , h2
+  {
+    color: white;
+    text-align: left;
+    padding-left: 0px;
+      font-family: MaiandraGD;
+  }
+  h1
+  {
+    font-variant: small-caps;
+  }
+  p
+  {
+    color: white;
+      width: 106%;
+      text-align: left;
+      font-family: Arial;
+      font-size: 15px
+      /* border: 1px solid white; */
+  }
+
+  /* 2nd row behavior */
+    #row2
+    {
+         width: 100%;
+         padding-bottom: 375px;
+         /* border: 1px solid red; */
+    }
+
+    /* guitar pic  */
+    #guitar
+    {
+      width: 50%;
+         min-height: 100%;
+         padding-left: 257px;
+    }
+
+    /* row 2 columns behavior */
+    .col-sm-6
+    {
+      width: 50%;
+    }
+
+/* 2nd row end */
+
+/* line */
+  .line
+  {
+    padding-bottom: 2px;
+    text-align: center;
+    background: linear-gradient(to left, #000, #fff, #000) right #fff no-repeat;
+    background-size: 100% 5px;
+    margin-top: -10px;
+  }
+
+/* footer */
+   /* line */
+  footer .line
+  {
+    padding-bottom: 2px;
+    /* text-align: center; */
+    background: linear-gradient(to left, #000, #fff, #000) right #fff no-repeat;
+    background-size: 100% 5px;
+    margin-top: 190px;
+    width: 100%;
+    margin: 0 auto;
+  }
+/* line end---------------------------------------------------------- */
+
+
+  footer
+  {
+      margin-top: 25%;/* 250px; */
+      margin-bottom: 15px;
+      bottom:0;
+      left:0;
+      right: 0;
+  }
+  /* footer row 1 */
+  .footerRow1
+  {
+    text-align: right;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .footerBtn
+  {
+    background-color: transparent;
+    color: #1abdd0;                           /* #1C4940; */
+    font-weight: normal;
+    border: 0px;
+    font-size: 16px;
+    text-shadow: 2px 2px 8px #1abdd0;
+  }
+  .footerBtn:hover
+  {
+    color: #FF1177;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #1abdd0, 0 0 30px #1abdd0, 0 0 40px #1abdd0, 0 0 55px #1abdd0, 0 0 75px #1abdd0;
+    /* rgb(121,95,206) */
+  }
+
+  /* footer row 2 */
+  .footerRow2
+  {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .footerRow2 img
+  {
+      vertical-align: bottom;
+  }
+
+  #footerImg {
+    height: 40px;
+    width: 65px;
+    vertical-align: bottom;
+}
+  .footerText
+  {
+    color: white;
+    margin-top: 20px;
+  }
+
+  /* nav */
+  .sidenav
+  {
+      text-align: center;
+      border-bottom: 1px solid white;
+      box-shadow-bottom: 5px white;
+      width: 270px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .aNav
+  {
+    min-height: 40px;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .aNav img
+  {
+    position: relative;
+    bottom: -25px;
+  }
+  .aNav:hover img 
+  {
+    bottom: 0;
+    transition-duration: .8s;
+  }
+/* footer END -------------------------------------------------------------------------*/
+  */*/*/*/

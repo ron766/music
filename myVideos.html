@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>My Videos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- modal image gallery css -->
+    <link rel="stylesheet" href="css/w3ModalGal.css">
+    <!-- flipster -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/flipster/demo.css">
+    <link rel="stylesheet" href="css/flipster/jquery.flipster.min.css">
+    <!-- boot for nav and tooltip-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- local -->
+    <link rel="stylesheet" href="css/styleMyFiles.css">
+    <!-- js for div replace & Flipster & tooltip 2.1.1-->
+    <script src="javascript/flipster/jquery.min.js"></script>
+    <!-- flipster -->
+    <!-- <script src="javascript/flipster/jquery.min.js"></script> -->
+    <script src="javascript/flipster/jquery.flipster.min.js"></script>
+   </head>
+   <body>
+      <!-- Main container -->
+      <div class="container">
+         <!-- Inner main container -->					
+         <div class="second">
+            <!-- 1st row -->
+            <div class="row" id="row1">
+               <!-- 1st row -->
+               <div class="column side">
+                  <div class="mike"></div>
+               </div>
+               <div class="column mid">
+                  <div class="musicLogo">
+                  </div>
+               </div>
+               <div class="column side">
+                  <div class="search">
+                     <input type="text">
+                  </div>
+               </div>
+            </div>
+            <!-- 1st row end -->
+            <br>
+            <nav class="navbar navbar-default">
+               <!-- nav bar -->
+              <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                  <li><a href="indexMusic.html">About Me</a></li>
+                  <li><a href="myPictures.html">My Pictures</a></li>
+                  <li><a href="myMusic.html">My Music</a></li>
+                  <li><a href="myFiles.html">My Files</a></li>
+                  <li><a href="#" class="active">My Videos</a></li>
+                </ul>
+              </div>
+            </nav>
+            <!-- nav bar end ******************************************************************-->	
+            <!-- buttons for div replacement-->
+            <div class=mainView>
+               <div class="btn-group gridGal">
+                  <button type="button" class="btn btn-primary gridBtn active">Grid</button>
+                  <button type="button" class="btn btn-primary galleryBtn">Gallery</button>
+               </div>
+               <br>
+               <br>
+               <!-- grid -->
+               <div class="grid">
+                  <div class="gridVideoDiv">
+                    <video controls id="resource_video" width="320" height="240" class="disp">
+                    </video>
+                    <!-- to display info -->
+                    <div class="videoInfo disp">
+                    	<p class="gridVidInfo" id="infov2"></p>
+                    </div>
+                  </div>
+                  <br>
+                <div class="videoGridRow">
+                	<!-- <div class="r-img"> -->
+                  <!-- image row 1 -->
+                  <img src="images/videoThumbs/lean.gif" class="w3-hover-opacity imgDetail play_media1"
+                  id="images/videoThumbs/LeanOn.mp4" data-title='Title: Lean on' data-artist="Artist: MO" data-genre="Genre: Pop" data-length="Length: 4.11" data-rating="3" data-toggle="tooltip" data-placement="top" title="MO-Lean on">
+                  <img src="images/videoThumbs/brunomarsuptownfunk.gif" class="w3-hover-opacity imgDetail play_media1" id="images/videoThumbs/UptownFunk.mp4" data-title='Title: Uptown Funk' data-artist="Artist: Bruno Mars" data-genre="Genre: Pop" data-length="Length: 4.30" data-rating="4" data-toggle="tooltip" data-placement="top" title="Bruno Mars-Uptown Funk">
+                  <img src="images/videoThumbs/david_guetta.gif" class="w3-hover-opacity imgDetail play_media1" id="images/videoThumbs/DavidGuettaDangerous.mp4" data-title='Title: Dangerous' data-artist="Artist: David Guetta" data-genre="Genre: Dance/Electronic" data-length="Length: 7.08" data-rating="2" data-toggle="tooltip" data-placement="top" title="David Guetta-Dangerous">
+                  <img src="images/videoThumbs/boys.gif" class="w3-hover-opacity imgDetail play_media1"
+                  id="images/videoThumbs/Backstreet IWantItThatWay.mp4" data-title='Title: I Want It That Way' data-artist="Artist: VBackstreet Boys" data-genre="Genre: Pop" data-length="Length: 3.39" data-rating="3" data-toggle="tooltip" data-placement="top" title="Backstreet Boys-I Want It That Way">
+                  <img src="images/videoThumbs/dmitri.gif" class="w3-hover-opacity imgDetail play_media1 dmitri" id="images/videoThumbs/DimitriVegas  Hey Baby.mp4" data-title='Title: Hey Baby' data-artist="Artist: Dmitri Vegas & Like Mike" data-genre="Genre: Pop" data-length="Length: 3.16" data-rating="3" data-toggle="tooltip" data-placement="top" title="Dimitri Vegas-Hey Baby">
+                  <br>
+                  <br>
+                  <!-- </div> -->
+                  <!-- <div class="r-img"> -->
+                  <!-- image row 2 -->
+                  <img src="images/videoThumbs/cali.gif" class="w3-hover-opacity imgDetail play_media1 cali" id="images/videoThumbs/Hotel California.mp4" data-title='Title: Hotel California' data-artist="Artist: Eagles" data-genre="Genre: Rock" data-length="Length: 6.40" data-rating="5" data-toggle="tooltip" data-placement="bottom" title="Eagles-Hotel California">
+                  <img src="images/videoThumbs/ed.gif" class="w3-hover-opacity imgDetail play_media1"
+                  id="images/videoThumbs/ShapeOfYou.mp4" style="" data-title='Title: Shape Of You' data-artist="Artist: Ed Sheeran" data-genre="Genre: Pop" data-length="Length: 4.23" data-rating="4" data-toggle="tooltip" data-placement="bottom" title="Ed Sheeran-Shape Of You">
+                  <img src="images/videoThumbs/en.gif" class="w3-hover-opacity imgDetail play_media1"
+                  id="images/videoThumbs/Bailando.mp4" style="" data-title='Title: Bailando' data-artist="Artist: Enrique Iglesias" data-genre="Genre: Jazz" data-length="Length: 4.31" data-rating="5" data-toggle="tooltip" data-placement="bottom" title="Enrique Iglesias-Bailando">
+                  <img src="images/videoThumbs/krew.gif" class="w3-hover-opacity imgDetail play_media1"
+                  id="images/videoThumbs/Krewella-Alive.mp4" style="" data-title='Title: Alive' data-artist="Artist: Krewella" data-genre="Genre: Dance/Electronic" data-length="Length: 3.26" data-rating="5" data-toggle="tooltip" data-placement="bottom" title="Krewella-Alive">
+                  <img src="images/videoThumbs/despa.gif" class="w3-hover-opacity imgDetail play_media1" id="images/videoThumbs/Despacito.mp4" data-title='Title: Despacito' data-artist="Artist: Luis Fonsi" data-genre="Genre: Pop" data-length="Length: 4.41" data-rating="4" data-toggle="tooltip" data-placement="bottom" title="Luis Fonsi-Despacito">
+                  <!-- </div> -->
+              	</div>
+              </div>
+               <!-- gallery -->
+              <div class="videoGallery disp">
+                <article id="demo-carousel" class="demo videoGal">
+                  <div id="carousel">
+                    <ul class="flip-items">
+                     	<li id="0" class="videoInfoGal" data-title='Title: Lean on' data-artist="Artist: MO" data-genre="Genre: Pop" data-length="Length: 4.11" data-rating="3">
+                        <video controls poster="images/videoThumbs/lean.gif" width="640" height="480" class="vid" data-toggle="tooltip" data-placement="right" title="MO-Lean on" >
+                          <source src="images/videoThumbs/LeanOn.mp4" type="video/mp4">
+                        </video>
+                     	</li>
+                     	<li id="1" class="videoInfoGal" data-title='Title: Uptown Funk' data-artist="Artist: Bruno Mars" data-genre="Genre: Pop" data-length="Length: 4.30" data-rating="4">
+                        <video controls poster="images/videoThumbs/brunomarsuptownfunk.gif" width="640" height="480" class="vid" data-toggle="tooltip" data-placement="right" title="Bruno Mars-Uptown Funk">
+                          <source src="images/videoThumbs/UptownFunk.mp4" type="video/mp4">
+                        </video>
+                     	</li>
+                     	<li id="2" class="videoInfoGal" data-title='Title: Dangerous' data-artist="Artist: David Guetta" data-genre="Genre: Dance/Electronic" data-length="Length: 7.08" data-rating="2">
+                        <video controls poster="images/videoThumbs/david_guetta.gif" width="640"  				 height="480" class="vid" data-toggle="tooltip" data-placement="right" title="David Guetta-Dangerous">
+                          <source src="images/videoThumbs/DavidGuettaDangerous.mp4" type="video/mp4">
+                        </video>
+                     </li>
+                     <li id="3" class="videoInfoGal" data-title='Title: I Want It That Way' data-artist="Artist: VBackstreet Boys" data-genre="Genre: Pop" data-length="Length: 3.39" data-rating="3">
+                        <video controls poster="images/videoThumbs/boys.gif" width="640" height="480" class="vid" data-toggle="tooltip" data-placement="right" title="Backstreet Boys-I Want It That Way">
+                          <source src="images/videoThumbs/Backstreet IWantItThatWay.mp4" type="video/mp4">
+                        </video>
+                     	</li>
+                     	<li  id="4" class="videoInfoGal" data-title='Title: Hey Baby' data-artist="Artist: Dmitri Vegas & Like Mike" data-genre="Genre: Pop" data-length="Length: 3.16" data-rating="3">
+                        <video controls poster="images/videoThumbs/dmitri.gif" width="640" height="480" class="vid" data-toggle="tooltip" data-placement="right" title="Dimitri Vegas-Hey Baby">
+                          <source src="images/videoThumbs/DimitriVegas  Hey Baby.mp4" type="video/mp4">
+                        </video>
+                     	</li>
+                     	<li id="5" class="videoInfoGal" data-title='Title: Hotel California' data-artist="Artist: Eagles" data-genre="Genre: Rock" data-length="Length: 6.40" data-rating="5">
+                        <video controls poster="images/videoThumbs/california.gif" width="640"  height="480" class="vid" data-toggle="tooltip" data-placement="right" title="Eagles-Hotel California">
+                          <source src="images/videoThumbs/Hotel California.mp4" type="video/mp4">
+                        </video>
+                     	</li>
+                     	<li id="6" class="videoInfoGal" data-title='Title: Shape Of You' data-artist="Artist: Ed Sheeran" data-genre="Genre: Pop" data-length="Length: 4.23" data-rating="4">
+                        <video controls poster="images/videoThumbs/ed.gif" width="640" height="480" class="vid" data-toggle="tooltip" data-placement="right" title="Ed Sheeran-Shape Of You">
+                          <source src="images/videoThumbs/ShapeOfYou.mp4" type="video/mp4">
+                        </video>
+                     	</li>
+                     	<li id="7" class="videoInfoGal" data-title='Title: Bailando' data-artist="Artist: Enrique Iglesias" data-genre="Genre: Jazz" data-length="Length: 4.31" data-rating="5">
+                        <video controls poster="images/videoThumbs/en.gif" width="640" height="480" class="vid" data-toggle="tooltip" data-placement="right" title="Enrique Iglesias-Bailando">
+                          <source src="images/videoThumbs/Bailando.mp4" type="video/mp4">
+                        </video>
+                     	</li>
+                     	<li id="8" class="videoInfoGal" data-title='Title: Alive' data-artist="Artist: Krewella" data-genre="Genre: Dance/Electronic" data-length="Length: 3.26" data-rating="5">
+                        <video controls poster="images/videoThumbs/krew.gif" width="640" height="480" class="vid" data-toggle="tooltip" data-placement="right" title="Krewella-Alive">
+                          <source src="images/videoThumbs/Krewella-Alive.mp4" type="video/mp4">
+                        </video>
+                     	</li>
+                     	<li id="9" class="videoInfoGal" data-title='Title: Despacito' data-artist="Artist: Luis Fonsi" data-genre="Genre: Pop" data-length="Length: 4.41" data-rating="4">
+                        <video controls poster="images/videoThumbs/despa.gif" width="640" height="480" class="vid" data-toggle="tooltip" data-placement="right" title="Luis Fonsi-Despacito">
+                          <source src="images/videoThumbs/Despacito.mp4" type="video/mp4">
+                        </video>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- <script>
+                                        var carousel = $("#carousel").flipster({
+                                            style: 'carousel',
+                                            spacing: -0.5,
+                                            nav: true,
+                                            buttons:   true,
+                                        });
+                  </script> -->
+                </article>
+                <!-- para to display array of info -->
+                <p class="galleryVidInfo disp" id="infov1"></p>
+             	</div><!-- videoGallery end -->
+            </div>
+            <footer>
+               <!-- footer row -->
+               <div class="line"></div>
+               <!-- line -->
+               <div class="footerRow1">
+                  <!-- row 1 containing buttons -->
+                  <button type="button" class="footerBtn">EULA</button> |
+                  <button type="button" class="footerBtn">Terms of services</button> |
+                  <button type="button" class="footerBtn">Privacy policy</button>
+               </div>
+               <div class="footerRow2">
+                  <!-- row 2 of footer -->
+                  <img src="images/mike.jpg" id="footerImg">
+                  <small class="footerText">Copyright © 2018 My website. All rights reserved &reg</small>
+               </div>
+               <div id="mySidenav" class="sidenav">
+                  <!-- row 3 of footer -->
+                  <a href="https://www.blogger.com/" target="blank" class="aNav">
+                  <img src="images/blogger.png" id="blogger">
+                  </a>
+                  <a href="https://www.facebook.com/" class="aNav">
+                  <img src="images/facebook.png" id="fb">
+                  </a>
+                  <a href="http://digg.com/" class="aNav">
+                  <img src="images/digg.png" id="digg">
+                  </a>
+                  <a href="https://www.linkedin.com/start/join?_l=en" class="aNav">
+                  <img src="images/linkedin.png" id="linkedin">
+                  </a>
+                  <a href="https://www.stumbleupon.com/" class="aNav">
+                  <img src="images/stumbleupon.png" id="stumble">
+                  </a>
+                  <a href="https://twitter.com/login?lang=en" class="aNav">
+                  <img src="images/twitter.png" id="twit">
+                  </a>
+               </div>
+            </footer>
+         </div>
+         <!-- second -->
+      </div><!-- main -->		
+      <script src="javascript/bootstrap.min.js"></script>
+      <script src="javascript/script.js"></script> 		
+   </body>
+</html>
