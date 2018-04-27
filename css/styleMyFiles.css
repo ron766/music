@@ -182,9 +182,7 @@ input {
     font-weight: bold;
     font-family: MaiandraGD;
 }
-.active {
-    background-color: #286090;
-}
+
 /* footer ------------------------------------------------------------------------------------------*/
 /* line */
 footer .line {
@@ -315,6 +313,10 @@ footer {
     width: 55px;
 }
 /* main accordion pannel */
+/* .panel-default > .panel-heading + .active {
+  background-color: #286090;
+} */
+
 .panel-group {
     width: 100%;
     min-height: 598px;
@@ -591,7 +593,10 @@ p {
     background: rgba(0, 0, 0, 0.8);
     margin-top: 10px;
 }
-.highlight { background-color: red; }
+.highlight { 
+    box-shadow: 0px 0px 8px 3px #ffffff;
+    background-color: darkolivegreen; 
+}
 
 .stop {   
 }
@@ -711,7 +716,6 @@ p {
     stroke: transparent;
 }
 /* gallery slider */
-<<<<<<< HEAD
 /* MY VIDEOS ****************************************************/
 .gridVideoDiv {
     width: 100%;
@@ -789,33 +793,7 @@ video + .tooltip > .tooltip-inner {
     margin-top: 50px;
 }
 
-=======
-
-
-
-
-
-video + .tooltip > .tooltip-inner {
-    background-color: rgba(255, 255, 255, 0.4);
-    color: #00b6fe;
-    border: 1px solid #00b6fe;
-    font-weight: 350;
-    max-width: 360px;
-    font-size: 15px;
-    text-align:left;
-    text-align: left;
-    margin-right: 0px;
-    margin-top:-9px;
+.active {
+    background-color: #286090;
 }
 
-table {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.4);
-}
-
-/*footer btn change and tooltip hover*/
-
-
-
-
->>>>>>> 6360ae524bcce5727286fd9ff01be9145d32a78a

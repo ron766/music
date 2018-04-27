@@ -1,4 +1,4 @@
-/*MY PICTURES*/	
+/*MY PICTURES*************************************************************/	
 /*image view grid*/
 function onClick(element) 
 {
@@ -23,14 +23,14 @@ function onClick(element)
 		$('.galleryBtn').removeClass('active');
 	})
 
-/*MY MUSIC*/	
-/*carousel*/
+/*MY MUSIC***************************************************************/	
+/*carousel for MUSIC & VIDEO gallery*/
 if($("#carousel").length){
 	var carousel = $("#carousel").flipster({
 		style: 'carousel', spacing: -0.5, nav: true, buttons:   true,
 	});
 }
-/*jquery for switching div*/
+/*jquery for switching div MUSIC*/
 	/*view list*/
 	$('.listBtn').click(function()
 	{
@@ -40,6 +40,10 @@ if($("#carousel").length){
 		$('.musicList').removeClass('disp');
 		$('.musicGrid').addClass('disp');
 		$('.musicGallery').addClass('disp');
+		/*pause audio on tab switch*/
+ 		$('audio').each(function() {
+         this.pause();
+    });
 	})	
 	/*view gallery*/
 	$('.galleryBtn').click(function()
@@ -50,6 +54,10 @@ if($("#carousel").length){
 		$('.musicList').addClass('disp');
 		$('.musicGrid').addClass('disp');
 		$('.musicGallery').removeClass('disp');
+		/*pause audio on tab switch*/
+ 		$('audio').each(function() {
+         this.pause();
+    });
 	})
 	/*view grid*/
 	$('.gridBtn').on('click',function()
@@ -60,6 +68,10 @@ if($("#carousel").length){
 		$('.musicGrid').removeClass('disp');
 		$('.musicList').addClass('disp');
 		$('.musicGallery').addClass('disp');
+		/*pause audio on tab switch*/
+ 		$('audio').each(function() {
+         this.pause();
+    });
 	})
 	/*to play audio gallery*/
 	$('img.play_aud').click(function(event){
@@ -73,11 +85,7 @@ if($("#carousel").length){
 		$('.audioList').removeClass('disp');
 		$("#resource_audioList").attr("src",this.id).get(0).play();
 	});
-  //tooltip
-	/*$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();   
-	});*/
-	//displaying details to <p (gallery)>
+	//displaying details to <p (gallery) MUSIC>
   $(".musicInfoGal").click(function(){
   	$('.galleryMusInfo').removeClass('disp');
   	var title = $(this).attr('data-title');
@@ -101,14 +109,14 @@ if($("#carousel").length){
 		$(this).addClass('highlight');						
 		$(this).siblings().removeClass('highlight')
 	});
-	/*jq to play audio on image click (Grid)*/	
+	/*jq to play audio on image click (Grid) MUSIC*/	
  	$('img.gridImg').click(function(event){
       /*$('muscicGridInfo').removeClass('disp');*/
       $("#resource_audio")
         .attr("src",this.id)
         .get(0).play();
   });
-  //displaying details to <p (grid)>
+  //displaying details to <p (grid) MUSIC>
 	$(".gridImg").click(function(){
 		$('.muscicGridInfo').removeClass('disp');
 		var title = $(this).attr('data-title');
@@ -126,32 +134,40 @@ if($("#carousel").length){
 		$('.gridMusInfo').html(str);
 	});
 
-/*MY VIDEOS*/
+/*MY VIDEOS*************************************************************/
 /*jquery for switching div*/
- 	/*view gallery*/
+ 	/*view gallery VIDEO*/
  	$('.galleryBtn').click(function()
  	{
  		$('.videoGallery').removeClass('disp');
  		$('.gridBtn').removeClass('active');
  		$('.grid').addClass('disp');
  		$('.galleryBtn').addClass('active');
+ 		/*pause video on tab switch*/
+ 		$('video').each(function() {
+         this.pause();
+    });
  	})	
- 	/*view grid*/
+ 	/*view grid VIDEO*/
  	$('.gridBtn').click(function()
  	{
  		$('.grid').removeClass('disp');
  		$('.galleryBtn').removeClass('active');
  		$('.videoGallery').addClass('disp');
  		$('.gridBtn').addClass('active');
+ 		/*pause video on tab switch*/
+ 		$('video').each(function() {
+         this.pause();
+    });
 	})
-/*jq to play video on image click (Grid)*/	
+/*jq to play video on image click (Grid) VIDEO*/	
  	$('img.play_media1').click(function(event){
       $('video').removeClass('disp');
       $("#resource_video")
         .attr("src",this.id)
         .get(0).play();
   });
-//for play/pause
+//for play/pause VIDEO
 	$(document).ready(function(){
     $(".vid").click(function(){
 		 $('video').each(function() {
@@ -167,7 +183,7 @@ if($("#carousel").length){
 		});
 	}
 	
-//displaying details to <p (gallery)>
+//displaying details to <p (gallery) VIDEO>
   $(".videoInfoGal").click(function(){
   	$('.galleryVidInfo').removeClass('disp');
   	var title = $(this).attr('data-title');
@@ -185,7 +201,7 @@ if($("#carousel").length){
 		}
 		$('.galleryVidInfo').html(str);
 	});
-//displaying details to <p (grid)>
+//displaying details to <p (grid) VIDEO>
 $(".play_media1").click(function(){
 	$('.videoInfo').removeClass('disp');
 	var title = $(this).attr('data-title');
@@ -203,3 +219,10 @@ $(".play_media1").click(function(){
 	}
 	$('.gridVidInfo').html(str);
 });
+
+/*MY FILES*/
+//active   
+/*$('.panel-heading').on('click',function(){
+	$(this).addClass('active');
+	$(this).parent().siblings().find('.panel-heading').removeClass('active');
+})*/

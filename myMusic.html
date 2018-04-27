@@ -7,9 +7,9 @@
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			<link rel="stylesheet" href="css/flipster/demo.css">
 			<link rel="stylesheet" href="css/flipster/jquery.flipster.min.css">
-		<!-- boot for nav & tooltip & table-->
+		<!-- boot for nav & tooltip & table css-->
 			<link rel="stylesheet" href="css/bootstrap.min.css">
-		<!-- local -->
+		<!-- local css-->
 			<link rel="stylesheet" type="text/css" href="css/styleMyFiles.css">
 		<!-- flipster js-->
 			<script src="javascript/flipster/jquery.min.js"></script>
@@ -64,7 +64,6 @@
 				  <br>
 					<!-- musicGrid -->
 					<div class="musicGrid">
-<<<<<<< HEAD
 						<div class="gridMusicPlayer_Info">
               <div class="gridMusicPlayer"><audio controls id="resource_audio"></audio></div>
               <!-- to display info -->
@@ -97,57 +96,6 @@
 				<div class="musicList disp">	
 					<div class="listMusicPlayer">
 						<audio controls id="resource_audioList" class="audioList"> </audio>
-=======
-					</div><!-- musicGrid end -->
-					<!-- musicList -->
-					<div class="musicList disp">	
-						<table class="table">
-					    <thead>
-					      <tr>
-					        <th>Sr no</th>
-					        <th>Status</th>
-					        <th>Name</th>
-					        <th>Artist</th>
-					        <th>Genre</th>
-					        <th>Length</th>
-					        <th>Size</th>
-					        <th>Rating</th>
-					      </tr>
-					    </thead>
-					    <tbody>
-					      <tr>
-					        <td>1</td>
-					        <td>Status</td>
-					        <td>Song 1</td>
-					        <td>Artist 1</td>
-					        <td>Rock</td>
-					        <td>3:30</td>
-					        <td>5MB</td>
-					        <td>*****</td>
-					      </tr>
-					      <tr>
-					        <td>1</td>
-					        <td>Status</td>
-					        <td>Song 2</td>
-					        <td>Artist 2</td>
-					        <td>Genre</td>
-					        <td>Length</td>
-					        <td>Size</td>
-					        <td>Rating</td>
-					      </tr>
-					      <tr>
-					        <td>1</td>
-					        <td>Status</td>
-					        <td>Song 1</td>
-					        <td>Artist 1</td>
-					        <td>Genre</td>
-					        <td>Length</td>
-					        <td>Size</td>
-					        <td>Rating</td>
-					      </tr>
-					    </tbody>
-					  </table>
->>>>>>> 6360ae524bcce5727286fd9ff01be9145d32a78a
 					</div>
 					<table class="table" id="data">
 				    <thead>
@@ -267,7 +215,6 @@
 				  </table>
 				</div>
 					<!-- music gallery -->
-<<<<<<< HEAD
 					<div class="musicGallery disp">
 						<div class="gridMusicDiv">
 							<audio controls id="resource_audio1" class="audio1 disp"> </audio>
@@ -311,45 +258,9 @@
 			            	<img src="images/videoThumbs/despa.gif" class="w3-hover-opacity imgDetail play_aud" id="audio/Despacito.mp3">
 			            </li>
 					      </ul>
-=======
-					<div class="musicGallery disp demo123">
-						<article id="demo-carousel" class="demo">
-
-					    <div id="carousel" class="">
-					        <ul class="flip-items">
-					            <li class="music" id="0"><!-- data-flip-title="Red" -->
-					                <!--<img src="images/gallery/5.jpg" data-toggle="tooltip" title="Song 1"> o-->
-									<video width="320" height="240" controls class="vid" data-toggle="tooltip" data-placement="left" title="Titanic Theme">
-										<source src="D:\media\Video\New folder\(Titanic Theme)  Sungha Jung.mp4" type="video/mp4">
-									</video>
-					            </li>
-					            <li class="music" id="1"><!-- data-flip-title="Razzmatazz" data-flip-category="Purples" -->
-					                <!--<img src="images/gallery/1.jpeg">-->
-									<video width="320" height="240" controls class="vid" data-toggle="tooltip" data-placement="left" title="Cupcake">
-										<source src="D:\media\Video\New folder\Cuppycake Video.mp4" type="video/mp4">
-									</video>
-					             </li>
-					            <li class="music" id="2"><!-- data-flip-title="Deep Lilac" data-flip-category="Purples" -->
-	                <video width="320" height="240" controls class="vid" data-toggle="tooltip" data-placement="left" title="Titanic">
-										<source src="D:\media\Video\New folder\(Titanic Theme)  Sungha Jung.mp4" type="video/mp4">
-									</video>
-					            </li>
-					            <li class="music" id="3"><!-- data-flip-title="Daisy Bush" data-flip-category="Purples" -->
-					                <img src="images/gallery/3.jpg">
-					            </li>
-					            <li class="music" id="4"><!-- data-flip-title="Cerulean Blue" data-flip-category="Blues" -->
-					                <img src="images/gallery/4.jpg">
-					            </li>
-					        </ul>
->>>>>>> 6360ae524bcce5727286fd9ff01be9145d32a78a
 					    </div>
 						</article>
-<<<<<<< HEAD
 						<p class="galleryMusInfo disp"></p>
-=======
-						
-						<p id="p" class="info"></p>
->>>>>>> 6360ae524bcce5727286fd9ff01be9145d32a78a
 					</div><!-- musicGallery end -->	
 				</div><!-- mainViewMusic end -->
 				<!-- footer row -->
@@ -391,75 +302,10 @@
 				</footer>
 			</div><!-- second -->
 		</div><!-- main -->	
-<<<<<<< HEAD
 		<!-- custom js -->
 		<script src="javascript/script.js"></script>
 		<!-- js for tooltip & table 3.3.1 -->
 		<script src="javascript/flipster/jquery.min.js"></script>
   	<script src="javascript/bootstrap.min.js"></script>
-=======
-
-		<script>
-			/*jquery for switching div*/
-				/*view list*/
-				$('.listBtn').click(function()
-				{
-					$('.musicList').removeClass('disp');
-					$('.musicGrid').addClass('disp');
-					$('.musicGallery').addClass('disp');
-				})	
-				/*view gallery*/
-				$('.galleryBtn').click(function()
-				{
-					$('.musicList').addClass('disp');
-					$('.musicGrid').addClass('disp');
-					$('.musicGallery').removeClass('disp');
-				})
-				/*view grid*/
-				$('.gridBtn').on('click',function()
-				{
-					$('.musicGrid').removeClass('disp');
-					$('.musicList').addClass('disp');
-					$('.musicGallery').addClass('disp');
-				})
-		</script>	
-		<!-- tooltip -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script>
-			//tooltip
-			$(document).ready(function(){
-		    $('[data-toggle="tooltip"]').tooltip();   
-			});
-		</script>
-
-		<script>//for play/pause
-		$(document).ready(function(){
-		    $(".vid").click(function(){
-				 $('video').each(function() {
-		         this.pause();
-		    });
-				 $(this).get(0).play();
-			});
-		});
-		</script>
-		
-		<script>//array for displaying details to <p>
-		$(document).ready(function(){
-		    $(".music").click(function(){
-				var s = $(this).attr('id');
-				document.getElementById('p').innerHTML = arr[s];
-				<!-- $('.info').text(arr[s]); -->
-			});
-	
-			var arr = ['title song1<br/> album a1 <img src="images/blogger.png">',
-					   'title song2<br/> album a2',
-					   'title song3<br/> album a3',
-					   'title song4<br/> album a4',
-					   'title song5<br/> album a5',
-					   ];	
-		});
-		</script>
->>>>>>> 6360ae524bcce5727286fd9ff01be9145d32a78a
 	</body>
 </html>
